@@ -1,0 +1,40 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+
+  border: 1px solid red;
+  max-width: 680px;
+  width: 90vw;
+  min-height: 100vh;
+  margin: 0 auto;
+} 
+
+.menu {
+  border: 1px solid red;
+  width: 100%; 
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tasks {
+  position: relative;
+  border: 1px solid blue;
+}
+
+
+
+

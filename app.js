@@ -1,19 +1,20 @@
 const btn = document.querySelector('.button-add');
 const taskList = document.querySelector('.task-list');
-const inputList = document.querySelector('.input-list').value;
+
+const inputList = document.querySelector('.input-list');
 
 
 
-
-
-inputList.addEventListener('input', () => {
-
-})
 
 
 btn.addEventListener('click', (e) => {
   e.preventDefault();
-  //console.log('input:', getTextInput);
-  taskList.innerHTML += `<li>${inputList}</li>`;
 
+  const taskValue = inputList.value;
+
+  if (taskValue !== "") {
+    taskList.innerHTML += `<li>${taskValue}</li>`;
+  } else {
+    alert("adicione uma tarefa a lista  !!")
+  }
 });
